@@ -96,7 +96,7 @@ app.post("/persons", (req, res) => {
   };
   try {
     persons.push(newData);
-    res.status(202).json({
+    res.status(200).json({
       success: true,
       data: newData,
       error: null,
